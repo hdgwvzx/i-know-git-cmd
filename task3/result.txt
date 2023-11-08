@@ -1,0 +1,5 @@
+mkdir task3
+cd task3
+mkdir logs
+Вставьте сюда содержимое файла access.log
+grep "denied wrong password" access.log | sort -r | head -n 5
