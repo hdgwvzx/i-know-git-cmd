@@ -1,5 +1,8 @@
-mkdir task3
-cd task3
-mkdir logs
-Вставьте сюда содержимое файла access.log
-grep "denied wrong password" access.log | sort -r | head -n 5
+mkdir task3 #создаем директорию для ззадания
+cd task3 #переходим в директорию задания
+mkdir logs #создаем директорию по заданию
+touch access.log #создаем файл с логами
+vim access.log #открываем файл в редакторе и вставляем логи
+echo 'grep -m 5 \"denied wrong password\" access.log | sort -r' > solution.txt #создаем файл с командой, которая находит нужные строчки
+touch result.txt #создаем файл по заданию
+vim result.txt #открываем файл в редакторе и пишем опиисание для каждой команды
